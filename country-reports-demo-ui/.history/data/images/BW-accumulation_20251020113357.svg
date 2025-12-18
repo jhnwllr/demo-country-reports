@@ -1,0 +1,65 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <rect x="50" y="50" width="700" height="500" fill="#ffffff" stroke="#6c757d" stroke-width="2" rx="10"/>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#495057">
+    BW Species Accumulation Curve
+  </text>
+  <text x="400" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">
+    Botswana Cumulative Species Discovery
+  </text>
+  
+  <!-- Chart area -->
+  <rect x="100" y="160" width="600" height="300" fill="#f8f9fa" stroke="#dee2e6"/>
+  
+  <!-- Grid lines -->
+  <g stroke="#e9ecef" stroke-width="1">
+    <line x1="100" y1="200" x2="700" y2="200"/>
+    <line x1="100" y1="250" x2="700" y2="250"/>
+    <line x1="100" y1="300" x2="700" y2="300"/>
+    <line x1="100" y1="350" x2="700" y2="350"/>
+    <line x1="100" y1="400" x2="700" y2="400"/>
+    
+    <line x1="200" y1="160" x2="200" y2="460"/>
+    <line x1="300" y1="160" x2="300" y2="460"/>
+    <line x1="400" y1="160" x2="400" y2="460"/>
+    <line x1="500" y1="160" x2="500" y2="460"/>
+    <line x1="600" y1="160" x2="600" y2="460"/>
+  </g>
+  
+  <!-- Accumulation curve -->
+  <path d="M 100 450 Q 200 420 300 380 Q 400 320 500 280 Q 600 250 700 200" 
+        fill="none" stroke="#28a745" stroke-width="3"/>
+  
+  <!-- Data points -->
+  <circle cx="150" cy="440" r="3" fill="#28a745"/>
+  <circle cx="250" cy="400" r="3" fill="#28a745"/>
+  <circle cx="350" cy="350" r="3" fill="#28a745"/>
+  <circle cx="450" cy="300" r="3" fill="#28a745"/>
+  <circle cx="550" cy="260" r="3" fill="#28a745"/>
+  <circle cx="650" cy="220" r="3" fill="#28a745"/>
+  
+  <!-- Axes labels -->
+  <text x="400" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+    Sampling Effort (Years)
+  </text>
+  <text x="70" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#495057" transform="rotate(-90 70 310)">
+    Cumulative Species Count
+  </text>
+  
+  <!-- Y-axis values -->
+  <text x="90" y="205" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">8000</text>
+  <text x="90" y="255" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">6000</text>
+  <text x="90" y="305" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">4000</text>
+  <text x="90" y="355" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">2000</text>
+  <text x="90" y="405" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">0</text>
+  
+  <!-- X-axis values -->
+  <text x="200" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">2010</text>
+  <text x="300" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">2015</text>
+  <text x="400" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">2020</text>
+  <text x="500" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">2025</text>
+  
+  <text x="400" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#adb5bd">
+    Placeholder chart - Replace with actual species accumulation data
+  </text>
+</svg>

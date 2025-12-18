@@ -1,0 +1,40 @@
+import { DatasetScatterData } from './types';
+
+export const colombiaDatasetData: DatasetScatterData = {
+  countryCode: 'CO',
+  countryName: 'Colombia',
+  totalDatasets: 28,
+  lastModified: '2025-10-21',
+  dataSource: 'Instituto Alexander von Humboldt and Colombian biodiversity institutions',
+  notes: 'Datasets from one of the world\'s most biodiverse countries',
+  datasets: [
+    { id: 'co-1', name: 'SINCHI Amazon Biodiversity Database', species: 15000, occurrences: 750000, publishedInCountry: true },
+    { id: 'co-2', name: 'Instituto Humboldt Collections', species: 28000, occurrences: 1200000, publishedInCountry: true },
+    { id: 'co-3', name: 'Universidad Nacional de Colombia Herbarium', species: 12500, occurrences: 420000, publishedInCountry: true },
+    { id: 'co-4', name: 'eBird Colombia', species: 1900, occurrences: 2800000, publishedInCountry: false },
+    { id: 'co-5', name: 'iNaturalist Colombia Observations', species: 18500, occurrences: 380000, publishedInCountry: false },
+    { id: 'co-6', name: 'Universidad de los Andes Biodiversity Collections', species: 8900, occurrences: 185000, publishedInCountry: true },
+    { id: 'co-7', name: 'Chocó Biogeographic Database', species: 22000, occurrences: 650000, publishedInCountry: true },
+    { id: 'co-8', name: 'Colombian Páramos Biodiversity Network', species: 3500, occurrences: 85000, publishedInCountry: true },
+    { id: 'co-9', name: 'INVEMAR Marine Biodiversity Database', species: 4200, occurrences: 125000, publishedInCountry: true },
+    { id: 'co-10', name: 'Orinoco Basin Biodiversity Survey', species: 8500, occurrences: 220000, publishedInCountry: true },
+    { id: 'co-11', name: 'Colombian Butterfly Diversity Project', species: 3200, occurrences: 95000, publishedInCountry: true },
+    { id: 'co-12', name: 'Colombian Orchid Society Database', species: 4500, occurrences: 65000, publishedInCountry: true },
+    { id: 'co-13', name: 'Mammal Diversity of Colombia Database', species: 520, occurrences: 48000, publishedInCountry: true },
+    { id: 'co-14', name: 'Colombian Amphibian Atlas', species: 850, occurrences: 35000, publishedInCountry: true },
+    { id: 'co-15', name: 'Freshwater Fish Diversity Colombia', species: 1600, occurrences: 75000, publishedInCountry: true },
+    { id: 'co-16', name: 'Palms of Colombia Database', species: 250, occurrences: 25000, publishedInCountry: true },
+    { id: 'co-17', name: 'Colombian Mycological Collections', species: 2800, occurrences: 42000, publishedInCountry: true },
+    { id: 'co-18', name: 'Colombian Endemic Species Database', species: 5500, occurrences: 125000, publishedInCountry: true },
+    { id: 'co-19', name: 'GBIF Colombia Node', species: 42000, occurrences: 3200000, publishedInCountry: false },
+    { id: 'co-20', name: 'Colombian Cactaceae Collections', species: 180, occurrences: 15000, publishedInCountry: true },
+    { id: 'co-21', name: 'Bryophyte Diversity Colombia', species: 1200, occurrences: 28000, publishedInCountry: true },
+    { id: 'co-22', name: 'Colombian Pollinator Network Database', species: 2100, occurrences: 85000, publishedInCountry: true },
+    { id: 'co-23', name: 'Colombian Wetland Biodiversity Survey', species: 6500, occurrences: 180000, publishedInCountry: true },
+    { id: 'co-24', name: 'Primate Conservation Colombia Database', species: 38, occurrences: 12000, publishedInCountry: true },
+    { id: 'co-25', name: 'Colombian Mangrove Ecosystem Database', species: 850, occurrences: 35000, publishedInCountry: true },
+    { id: 'co-26', name: 'Arachnid Diversity of Colombia', species: 1800, occurrences: 45000, publishedInCountry: true },
+    { id: 'co-27', name: 'Coffee Region Biodiversity Assessment', species: 4200, occurrences: 95000, publishedInCountry: true },
+    { id: 'co-28', name: 'Colombian Entomological Survey', species: 12000, occurrences: 285000, publishedInCountry: true }
+  ]
+};
