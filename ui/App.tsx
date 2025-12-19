@@ -106,6 +106,7 @@ const getGrowthStyling = (growthStr: string) => {
 export default function App() {
   const [selectedCountry, setSelectedCountry] = useState<string>("AU");
   const [currentCountry, setCurrentCountry] = useState<CountryData | null>(null);
+  const [datasetScatterData, setDatasetScatterData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
   // Initialize country from URL parameter on first load
@@ -150,8 +151,12 @@ export default function App() {
     const loadCountryData = async () => {
       setLoading(true);
       try {
-        const data = await getCountryData(selectedCountry);
-        setCurrentCountry(data);
+        const [countryInfo, scatterData] = await Promise.all([
+          getCountryData(selectedCountry),
+          getDatasetScatterData(selectedCountry)
+        ]);
+        setCurrentCountry(countryInfo);
+        setDatasetScatterData(scatterData);
       } catch (error) {
         console.error("Failed to load country data:", error);
       } finally {
@@ -444,7 +449,7 @@ export default function App() {
         </CardHeader>
         <CardContent>
           <DatasetScatterPlot 
-            datasets={getDatasetScatterData(selectedCountry)?.datasets || []}
+            datasets={datasetScatterData?.datasets || []}
             countryName={currentCountry.name}
           />
           

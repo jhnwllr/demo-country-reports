@@ -21,3 +21,13 @@ export interface CountryAccumulationData {
   lastModified: string;
   taxonomicGroups: TaxonomicGroupAccumulation[];
 }
+
+// GBIF country enumeration types
+export interface GBIFCountry {
+  iso2: string;
+  iso3: string;
+  isoNumerical: string;
+  title: string;
+  gbifRegion: string;
+  enumName: string;
+}
